@@ -428,12 +428,29 @@ table tr:nth-child(2n) td{
         display: none;
     }
 
+    .title {
+        margin-top: 85px;
+    }
+
+    :before {
+        content: '';
+        display: block;
+        position: relative;
+        width: 0;
+        height: 85px;
+        margin-top: -85px;
+    }
+
     #toggle-sidebar {
         background-color: #2980B9;
         display: block;
         margin-bottom: 1.6em;
         padding: 0.6em;
         text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 
     #toggle-sidebar h2 {
