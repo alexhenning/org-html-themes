@@ -53,6 +53,13 @@ $( document ).ready(function() {
     var closeBtn = $('<a class="close-sidebar" onclick="$(\'#table-of-contents\').toggle();">Close</a>');
     var tocTitle = $('#table-of-contents').find('h2');
     tocTitle.append(closeBtn);
+
+    // (Alex) Close menu when you click a link.
+    $(document).on('click', "ul.nav ul ul a", function() {
+        if ($("#toggle-sidebar").is(":visible")) {
+            $('#table-of-contents').hide();
+        }
+    });
 });
 
 window.SphinxRtdTheme = (function (jquery) {

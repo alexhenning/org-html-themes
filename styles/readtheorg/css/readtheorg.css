@@ -411,9 +411,9 @@ table tr:nth-child(2n) td{
 }
 
 @media screen and (max-width: 768px) {
-    #table-of-contents {
+    #content #table-of-contents {
         display: none;
-        width: 60%;
+        width: 100%;
     }
 
     #table-of-contents h2 a {
@@ -432,7 +432,7 @@ table tr:nth-child(2n) td{
         margin-top: 85px;
     }
 
-    :before {
+    h1:before, h2:before, h3:before, h4:before, h5:before, h6:before {
         content: '';
         display: block;
         position: relative;
@@ -462,9 +462,9 @@ table tr:nth-child(2n) td{
     }
 
     #table-of-contents .close-sidebar {
-       color: rgba(255, 255, 255, 0.3);
+       color: rgba(255, 255, 255, 0.66);
        display: inline-block;
-       margin: 0px 10px 0px 45px;
+       margin: 0px 10px 0px 40%;
        padding: 10px;
     }
 }
